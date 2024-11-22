@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Despre noi</title>
+    <script type="module" crossorigin src="./assets/script-BwNOcauL.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/script-TU_dNYH5.css">
+  </head>
+
+<body class="bg-black flex flex-col items-center">
+  <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
+  <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
+    <img src="./assets/img1-Bu9y0yp8.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
+    <i class="bi bi-three-dots text-white text-3xl block md:hidden"></i>
+  </div>
+<!-- Meniul - vizibil doar pe desktop -->
+<div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
+    <a href="index.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
+    <a href="evenimente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
+    <a href="comunitate.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
+    <a href="predici.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
+    <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
+    <a href="doneaza.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
+    <a href="contact.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
+    <a href="departamente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
+    <a href="verset.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
+    <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
+  </div>
+ 
+  <div class="bg-black-200 min-h-screen flex flex-col w-[900px] mt-6 rounded-lg items-center p-4 sm:p-8">
+    <!-- Titlu -->
+    <div class="text-center mb-6">
+      <h1 class="text-xl font-bold text-yellow-500">DONEAZA</h1>
+      <p class="text-sm text-white">Orice donație are un impact direct și ne ajută să îndeplinim în continuare misiunea</p>
+    </div>
+  
+    <!-- Alegere sumă -->
+    <div class="w-full max-w-md">
+      <button class="bg-yellow-400 text-black w-full py-3 rounded-lg shadow-md text-lg font-semibold mb-4">
+        Alege suma
+      </button>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <button class="bg-yellow-200 text-black py-2 rounded-lg shadow-md font-semibold">200 ron</button>
+        <button class="bg-yellow-200 text-black py-2 rounded-lg shadow-md font-semibold">300 ron</button>
+        <button class="bg-yellow-200 text-black py-2 rounded-lg shadow-md font-semibold">300 ron</button>
+        <button class="bg-yellow-200 text-black py-2 rounded-lg shadow-md font-semibold">1000 ron</button>
+        <button class="bg-yelow-200 text-black py-2 rounded-lg shadow-md font-semibold">Alta sumă</button>
+      </div>
+    </div>
+  
+    <!-- Donatie -->
+    <div class="mt-6 text-center">
+      <p class="text-lg font-semibold text-white">Donația ta: <span class="font-bold">0 RON</span></p>
+      <button class="mt-4 bg-green-600 text-white w-[500px] max-w-md py-3 rounded-lg shadow-md font-semibold">
+        DONEAZA ACUM
+      </button>
+    </div>
+  
+    <!-- Form -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full max-w-md">
+      <!-- Prenume -->
+      <div>
+        <label for="prenume" class="block text-sm font-semibold text-white mb-2">Prenumele</label>
+        <input id="prenume" type="text"
+          class="w-full border border-gray-400 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+      </div>
+      <!-- Nume -->
+      <div>
+        <label for="nume" class="block text-sm font-semibold text-white mb-2">Nume</label>
+        <input id="nume" type="text" 
+          class="w-full border border-gray-400 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+      </div>
+      <!-- Email -->
+      <div class="sm:col-span-2">
+        <label for="email" class="block text-sm font-semibold text-white mb-2">Email</label>
+        <input id="email" type="email" 
+          class="w-full border border-gray-400 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+      </div>
+      <!-- Card -->
+      <div class="sm:col-span-2">
+        <label for="card" class="block text-sm font-semibold text-white mb-2">Card Number</label>
+        <input id="card" type="text" 
+          class="w-full border border-gray-400 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+      </div>
+      <!-- Campanie -->
+      <div class="sm:col-span-2">
+        <label for="campanie" class="block text-sm font-semibold text-white mb-2">Selectează campania</label>
+        <select id="campanie"
+          class="w-full border border-gray-400 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+          <option value="">SELECTEAZĂ CAMPANIA</option>
+          <option value="zeciuiala">ZECIUIALA</option>
+          <option value="social">SOCIAL</option>
+          <option value="donatie">DONATIE</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>
