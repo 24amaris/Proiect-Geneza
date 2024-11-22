@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pagina cu Meniu</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home</title>
+  <script type="module" crossorigin src="./assets/script-DaoMKdoS.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/script-BfIAoX76.css">
 </head>
 
 <body class="bg-black flex flex-col items-center">
@@ -16,60 +16,70 @@
     <img src="./assets/img1-Bu9y0yp8.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
     <i class="bi bi-three-dots text-white text-3xl block md:hidden"></i>
   </div>
-  <!-- Meniul - vizibil doar pe desktop -->
-  <div class="hidden md:flex justify-center p-2 mt-4 w-full max-w-screen-lg rounded-lg">
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
-    <a href="#" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
-  </div>
+<!-- Meniul - vizibil doar pe desktop -->
+<div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
+  <a href="index.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
+  <a href="evenimente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
+  <a href="comunitate.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
+  <a href="predici.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
+  <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
+  <a href="doneaza.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
+  <a href="contact.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
+  <a href="departamente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
+  <a href="verset.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
+  <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
+</div>
 
   <!-- Structura principală cu secțiuni și iconițe -->
   <div class="bg-black-300 mt-4 w-full max-w-screen-lg rounded-lg p-6 space-y-6">
     <!-- Prima secțiune cu predica (imagine) -->
-    <div class="relative h-48 md:h-32 lg:h-48 w-full rounded-lg overflow-hidden">
-      <img src="./assets/predica-CcscnYpR.jpeg" alt="Următoarea predică" class="object-cover w-full h-full">
+    <div class="relative mb-6 h-48 md:h-32 lg:h-48 w-full rounded-lg overflow-hidden">
+      <img src="./assets/IMG_2628-sLNBIkxf.jpg" alt="Următoarea predică" class="object-cover w-full h-full">
       <div class="absolute top-4 right-4 bg-white bg-opacity-80 rounded-md px-3 py-1 text-black font-semibold">
         10 noiembrie 2024 - 10:00
       </div>
+      <a href="donează.html">
       <div class="absolute bottom-4 left-4 bg-white bg-opacity-80 rounded-md px-3 py-1 text-black font-semibold">
         Următoarea predică și program
       </div>
     </div>
+  </a>
 
     <!-- A doua secțiune cu activitatea bisericii (imagine) -->
-    <div class="relative h-48 md:h-32 lg:h-48 w-full rounded-lg overflow-hidden">
-      <img src="./assets/img3-CU7mN-Om.JPG" alt="Activitatea bisericii" class="object-cover w-full h-full">
-      <div class="absolute bottom-4 left-4 bg-white bg-opacity-80 rounded-md px-3 py-1 text-black font-semibold">
-        Susține activitatea bisericii
+    <a href="donează.html">
+      <div class="relative h-48 md:h-32 lg:h-48 w-full rounded-lg overflow-hidden">
+        <img src="./assets/IMG_2632-CeCGUnpz.jpg" alt="Activitatea bisericii" class="object-cover w-full h-full">
+        <div class="absolute bottom-4 left-4 bg-white bg-opacity-80 rounded-md px-3 py-1 text-black font-semibold">
+          Susține activitatea bisericii(link la doneaza)
+        </div>
       </div>
-    </div>
-
+    </a>
+    
     <!-- Secțiunea cu butoane de opțiuni (Versetul zilei, Rugăciune, Donează) -->
-    <div class="grid grid-cols-3 gap-4 mt-4">
-      <div class="bg-white rounded-lg p-4 flex flex-col items-center text-black">
-        <i class="fas fa-book fa-2x"></i>
+    <a href="verset.html">
+      <div class="grid grid-cols-3  gap-4 mt-4">
+      <div class="bg-gray-300 hover:bg-gray-400 rounded-lg h-32 flex flex-col items-center text-black">
+        <i class="bi bi-book mt-6 text-3xl" ></i>
         <div class="mt-2 font-semibold">Versetul zilei</div>
       </div>
-      <div class="bg-white rounded-lg p-4 flex flex-col items-center text-black">
-        <i class="fas fa-praying-hands fa-2x"></i>
+    </a>
+    <a href="rugaciune.html">
+      <div class="bg-gray-300 hover:bg-gray-400 rounded-lg h-32 p-4 flex flex-col items-center text-black">
+        <i class="bi bi-people-fill mt-2 text-3xl"></i>
         <div class="mt-2 font-semibold">Rugăciune</div>
       </div>
-      <div class="bg-white rounded-lg p-4 flex flex-col items-center text-black">
-        <i class="fas fa-donate fa-2x"></i>
+    </a>
+    <a href="doneaza.html">
+      <div class="bg-gray-300 hover:bg-gray-400 rounded-lg p-4 h-32 flex flex-col items-center text-black">
+        <i class="bi bi-cash-coin mt-2 text-3xl"></i>
         <div class="mt-2 font-semibold">Donează</div>
       </div>
     </div>
+  </a>
 
     <!-- Butonul "Ești nou aici?" -->
     <div class="mt-6">
-      <a href="#" class="bg-yellow-400 text-black font-semibold py-2 px-6 rounded-lg border border-white block text-center mx-auto shadow-md hover:bg-yellow-600">Ești nou aici?</a>
+      <a href="comunitate.html" class="bg-yellow-400 text-black font-semibold py-2 px-6 rounded-lg border border-white block text-center mx-auto shadow-md hover:bg-yellow-600">Ești nou aici?</a>
     </div>
     
 
@@ -91,35 +101,36 @@
 
     <!-- Butonul "Identitate, viziune si misiune" cu spațiu deasupra -->
     <div class="mt-6">
-      <a href="#" class= "bg-yellow-400 text-black font-semibold py-2 px-6 rounded-lg border border-white block text-center mx-auto shadow-md hover:bg-yellow-600 ">Identitate, viziune si misiune</a>
+      <a href="despreNoi.html" class= "bg-yellow-400 text-black font-semibold py-2 px-6 rounded-lg border border-white block text-center mx-auto shadow-md hover:bg-yellow-600 ">Identitate, viziune si misiune</a>
     </div> 
 
     <!-- Secțiunea cu imagine și caseta de social media -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
       <div class="relative h-36 md:h-48 rounded-lg overflow-hidden border border-black">
         <img src="./assets/img7-DIsRhA1-.png" alt="Vizionare online" class="object-cover w-full h-full">
-        <p class="absolute bottom-2 left-2 right-2 bg-white bg-opacity-80 rounded-md px-2 py-1 text-xs text-black font-semibold text-center">
-          Vizionază-ne de oriunde (link la pagina de predici)
-        </p>
+        <a href="predici.html">
+          <p class="absolute bottom-2 left-2 right-2 bg-white bg-opacity-80 rounded-md px-2 py-1 text-xs text-black font-semibold text-center">
+            Vizionază-ne de oriunde (link la pagina de predici) </p>
+        </a>
       </div>
       <div class="bg-white p-4 rounded-lg flex flex-col items-start justify-center">
         <h3 class="text-lg font-semibold mb-2">Follow us on social media:</h3>
         <ul class="space-y-2">
-          <li class="flex items-center">
-            <a href="#" class="text-black flex items-center space-x-2">
-              <i class="fab fa-instagram fa-2x"></i>
+          <li class="flex hover:bg-gray-200 items-center">
+            <a href="https://www.instagram.com/geneza.oradea/" class="text-black flex items-center space-x-2">
+              <i class="bi bi-instagram text-3xl"></i>
               <p class="text-black font-semibold">biserica_geneza_oradea</p>
             </a>
           </li>
-          <li class="flex items-center">
-            <a href="#" class="text-black flex items-center space-x-2">
-              <i class="fab fa-facebook fa-2x"></i>
+          <li class="flex hover:bg-gray-200 items-center">
+            <a href="facebook.com/GenezaOradea" class="text-black flex items-center space-x-2">
+              <i class="bi bi-facebook text-3xl"></i>
               <p class="text-black font-semibold">Biserica Geneza Oradea</p>
             </a>
           </li>
-          <li class="flex items-center">
-            <a href="#" class="text-black flex items-center space-x-2">
-              <i class="fab fa-youtube fa-2x"></i>
+          <li class="flex hover:bg-gray-200 items-center">
+            <a href="https://www.youtube.com/@GenezaOradea" class="text-black flex items-center space-x-2">
+              <i class="bi bi-youtube text-3xl"></i>
               <p class="text-black font-semibold">Biserica Geneza Oradea</p>
             </a>
           </li>

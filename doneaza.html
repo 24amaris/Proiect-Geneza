@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Doneaza</title>
+</head>
+
+<body class="bg-black flex flex-col items-center">
+  <script type="module" src="./script.js"></script>
+  <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
+  <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
+    <img src="images/img1.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
+    <i class="bi bi-three-dots text-white text-3xl block md:hidden"></i>
+  </div>
+
+  <!-- Meniul - vizibil doar pe desktop -->
+  <div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
+    <a href="index.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
+    <a href="evenimente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
+    <a href="comunitate.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
+    <a href="predici.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
+    <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
+    <a href="doneaza.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
+    <a href="contact.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
+    <a href="departamente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
+    <a href="verset.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
+    <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
+  </div>
+
+  <!-- Secțiunea pentru donații -->
+  <div class="flex flex-col w-full max-w-screen-lg mt-14 px-4">
+    <!-- Textul de deasupra -->
+    <div class="text-center mb-6">
+      <p class="text-yellow-500 text-lg font-bold text-5xl">Doneaza</p>
+      <p class="text-white text-lg">See what God can do through your generosity</p>
+    </div>
+
+    <!-- Imaginea și casetele -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <!-- Imaginea -->
+      <div class="rounded-lg overflow-hidden">
+        <img src="images/IMG_2654.jpg" alt="poza doneaza" class="w-full md:w-96 object-cover h-auto rounded-lg">
+      </div>
+
+      <!-- Casetele de donații -->
+      <div class="flex flex-col gap-6">
+        <!-- Card online -->
+        <a href="card.html"
+          class="bg-yellow-500 w-full h-48 p-8 md:w-[450px] md:h-48 rounded-lg shadow-md text-center flex flex-col items-center justify-center hover:bg-yellow-600 transition">
+          <p class="text-black font-semibold">Card online</p>
+          <p class="text-black text-sm mb-2">Mai rapid, dar plătim comisioane</p>
+          <i class="bi bi-credit-card text-3xl text-black"></i>
+        </a>
+
+        <!-- Transfer bancar -->
+        <a href="transfer.html"
+          class="bg-yellow-500 w-full h-48 p-8 md:w-[450px] md:h-48 rounded-lg shadow-md text-center flex flex-col items-center justify-center hover:bg-yellow-600 transition">
+          <p class="text-black font-semibold">Transfer bancar</p>
+          <p class="text-black text-sm mb-2">Fără comisioane</p>
+          <i class="bi bi-wallet text-3xl text-black"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
