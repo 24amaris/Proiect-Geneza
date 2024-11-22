@@ -6,10 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Departamente</title>
-</head>
+  <style>
+  
+  .shadow-pop-tr {
+	-webkit-animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
 
+  </style>
+
+</head>
 <body class="bg-black flex flex-col items-center">
   <script type="module" src="./script.js"></script>
+
   <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
   <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
     <img src="images/img1.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
@@ -33,7 +70,7 @@
   <!-- Carusel de imagini -->
   <div class="container carousel-container mt-4 px-4 sm:px-6">
     <div id="carousel" class="flex space-x-4 overflow-x-auto sm:overflow-x-scroll flex-nowrap">
-      <img src="images/IMG_2659.jpg" alt="Event Image 1" class="carousel-item w-64 h-64 object-cover rounded-lg">
+      <img src="images/IMG_2659.jpg" alt="Event Image 1" class="carousel-item w-64 h-64 object-cover rounded-lg ">
       <img src="images/IMG_2668.jpg" alt="Event Image 2" class="carousel-item w-64 h-64 object-cover rounded-lg">
       <img src="images/IMG_2661.jpg" alt="Event Image 3" class="carousel-item w-64 h-64 object-cover rounded-lg">
       <img src="images/IMG_2662.jpg" alt="Event Image 4" class="carousel-item w-64 h-64 object-cover rounded-lg">
@@ -58,7 +95,7 @@
     </p>
     <!-- Buton -->
     <a href="doneaza.html">
-      <button class="mt-6 bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 font-semibold">
+      <button class="mt-6 bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 font-semibold shadow-pop-tr">
         Vreau să mă implic și eu!
       </button>
     </a>

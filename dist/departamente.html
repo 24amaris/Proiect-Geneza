@@ -6,11 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Departamente</title>
-  <script type="module" crossorigin src="./assets/script-BwNOcauL.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/script-TU_dNYH5.css">
-</head>
+  <style>
+  
+  .shadow-pop-tr {
+	animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
 
+  </style>
+
+  <script type="module" crossorigin src="./assets/script-DWoM4fkZ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/script-C81U9vvc.css">
+</head>
 <body class="bg-black flex flex-col items-center">
+
   <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
   <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
     <img src="./assets/img1-Bu9y0yp8.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
@@ -34,7 +52,7 @@
   <!-- Carusel de imagini -->
   <div class="container carousel-container mt-4 px-4 sm:px-6">
     <div id="carousel" class="flex space-x-4 overflow-x-auto sm:overflow-x-scroll flex-nowrap">
-      <img src="./assets/IMG_2659-jg93SroN.jpg" alt="Event Image 1" class="carousel-item w-64 h-64 object-cover rounded-lg">
+      <img src="./assets/IMG_2659-jg93SroN.jpg" alt="Event Image 1" class="carousel-item w-64 h-64 object-cover rounded-lg ">
       <img src="./assets/IMG_2668-DZ_UvqTh.jpg" alt="Event Image 2" class="carousel-item w-64 h-64 object-cover rounded-lg">
       <img src="./assets/IMG_2661-CLs0GuGO.jpg" alt="Event Image 3" class="carousel-item w-64 h-64 object-cover rounded-lg">
       <img src="./assets/IMG_2662-De4o17mW.jpg" alt="Event Image 4" class="carousel-item w-64 h-64 object-cover rounded-lg">
@@ -59,7 +77,7 @@
     </p>
     <!-- Buton -->
     <a href="doneaza.html">
-      <button class="mt-6 bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 font-semibold">
+      <button class="mt-6 bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 font-semibold shadow-pop-tr">
         Vreau să mă implic și eu!
       </button>
     </a>
