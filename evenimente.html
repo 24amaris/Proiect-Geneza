@@ -5,33 +5,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Evenimente</title>
+  <title>Home</title>
 </head>
 
-<body class="bg-black flex flex-col items-center">
+<body class="bg-cover bg-center flex flex-col items-center" style="background-image: url('images/IMG_3001.jpg');">
   <script type="module" src="./script.js"></script>
   <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
   <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
     <img src="images/img1.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
-    <i class="bi bi-three-dots text-white text-3xl block md:hidden"></i>
+    <div class="relative">
+      <!-- Hidden Checkbox for toggle functionality -->
+      <input type="checkbox" id="menuToggle" class="peer hidden" />
+    
+      <!-- Button to toggle drawer -->
+      <label
+        for="menuToggle"
+        class="flex items-center justify-center w-10 h-10 text-white rounded-full cursor-pointer hover:bg-gray-900 md:hidden"
+        aria-label="Menu">
+        <i class="bi bi-three-dots text-4xl"></i>
+      </label>
+    
+      <!-- Drawer -->
+      <div class="fixed top-0 right-0 z-50 h-full w-64 bg-black text-white transform translate-x-full transition-transform  peer-checked:translate-x-0" >
+        <!-- Close Button -->
+        <label
+          for="menuToggle"
+          class="absolute top-4 right-4 text-white  cursor-pointer"
+          aria-label="Close drawer" >
+          <i class="bi bi-x-lg text-2xl"></i>
+        </label>
+    
+        <!-- Drawer Content -->
+        <div class="flex flex-col h-full p-4">
+          <!-- Navigation -->
+          <nav class="mb-4">
+            <a
+              href="index.html"
+              class="block w-full px-4 py-2 mb-2 text-left text-lg rounded-md mt-16 hover:bg-gray-600" >
+              Home
+            </a>
+
+            <a
+              href="evenimente.html"
+              class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+              Evenimente
+           </a>
+
+           <a
+           href="comunitate.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Comunitate
+        </a>
+
+        <a
+        href="predici.html"
+        class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+        Predici/live
+     </a>
+
+     <a
+     href="despreNoi.html"
+     class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+     Despre noi
+  </a>
+
+        <a
+           href="doneaza.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Doneaza
+        </a>
+        <a
+           href="contact.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Contact
+        </a>
+        <a
+           href="departamente.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Departamente
+        </a>
+        <a
+           href="verset.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Versetul zilei
+        </a>
+        <a
+           href="rugaciune.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Rugaciune
+        </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <!-- Meniul - vizibil doar pe desktop -->
+  <div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
+    <a href="index.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Home</a>
+    <a href="evenimente.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
+    <a href="comunitate.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
+    <a href="predici.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
+    <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
+    <a href="doneaza.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Donează</a>
+    <a href="contact.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Contact</a>
+    <a href="departamente.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
+    <a href="verset.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
+    <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
   </div>
 
-<!-- Meniul - vizibil doar pe desktop -->
-<div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
-  <a href="index.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
-  <a href="evenimente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
-  <a href="comunitate.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
-  <a href="predici.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
-  <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
-  <a href="doneaza.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
-  <a href="contact.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
-  <a href="departamente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
-  <a href="verset.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
-  <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
-</div>
 
   <!-- Structura principală cu secțiuni și iconițe -->
-  <div class="bg-black-300 mt-4 w-full max-w-screen-lg rounded-lg p-6 space-y-6">
+  <div class="bg-black bg-opacity-50 mt-4 w-full max-w-screen-lg rounded-lg p-6 space-y-6">
     
     <div class="relative h-64 md:h-48 lg:h-64 w-full rounded-lg overflow-hidden">
       <img src="images/IMG_2628.jpg" alt="Următoarea predică" class="object-cover w-full h-full">
@@ -44,9 +130,9 @@
     </div>
   
     <!-- Secțiune întâlnire duminică -->
-    <div class="bg-yellow-400 rounded-lg p-4 text-center">
-      <h2 class="font-semibold text-lg text-black">Ne întâlnim în fiecare duminică</h2>
-      <p class="text-sm text-black">de la 10:00 și 18:00 pentru un timp de socializare, închinare, ascultare a Cuvântului și rugăciune. În timpul programelor, copiii sunt bineveniți la grupele de școală duminicală!</p>
+    <div class="bg-black bg-opacity-50 rounded-lg p-4 text-center">
+      <h2 class="font-semibold text-lg text-white">Ne întâlnim în fiecare duminică</h2>
+      <p class="text-sm text-white">de la 10:00 și 18:00 pentru un timp de socializare, închinare, ascultare a Cuvântului și rugăciune. În timpul programelor, copiii sunt bineveniți la grupele de școală duminicală!</p>
     </div>
 
     <!-- Evenimente (Serile de tineret) -->
@@ -54,7 +140,7 @@
       <div class="relative h-40 w-full md:w-1/3 rounded-lg overflow-hidden border border-black">
         <img src="images/10.jpg" alt="Serile de tineret" class="object-cover w-full h-full">
       </div>
-      <div class="bg-white p-6 rounded-lg text-black flex flex-col justify-center w-full md:w-2/3">
+      <div class="bg-black p-6 rounded-lg bg-opacity-50 text-white  flex flex-col justify-center w-full md:w-2/3">
         <h3 class="font-semibold text-lg">Serile mult așteptate de către cei tineri...serile de luni!</h3>
         <p class="text-sm mt-2">Vă așteptăm la TGO cu o inimă plină de entuziasm, pentru a descoperi împreună inima lui Dumnezeu - o inimă plină de dragoste pentru noua generație.</p>
       </div>
@@ -62,7 +148,7 @@
 
     <!-- Butonul trimitere la pagina de Instagram -->
     <div class="mt-6">
-      <a href="https://www.instagram.com/geneza_tineret_oradea/" class="bg-yellow-400 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded-lg border border-black block text-center mx-auto shadow-md"> Fii la curent urmărind pagina de Instagram</a>
+      <a href="https://www.instagram.com/geneza_tineret_oradea/" class="bg-black hover:border-yellow-500 text-yellow-500 font-semibold py-2 px-6 rounded-lg border border-white block text-center mx-auto shadow-md"> Fii la curent urmărind pagina de Instagram</a>
     </div>
 
     <!-- Tabăra Liber Junior -->
@@ -70,7 +156,7 @@
   <div class="relative h-40 w-full md:w-1/3 rounded-lg overflow-hidden border border-black">
     <img src="images/IMG_2634.jpg" alt="Tabăra Liber Junior" class="object-cover w-full h-full">
   </div>
-  <div class="bg-white p-6 rounded-lg text-black flex flex-col justify-center w-full md:w-2/3">
+  <div class="bg-black bg-opacity-50  p-6 rounded-lg text-white flex flex-col justify-center w-full md:w-2/3">
     <h3 class="font-semibold text-lg">Tabăra Liber Junior</h3>
     <p class="text-sm mt-2">O activitate importantă în biserica noastră este reprezentată de cei mai tineri membri. În această tabără, copiii sunt invitați să exploreze și să crească în credință într-un mod prietenos și captivant.</p>
   </div>
@@ -78,28 +164,28 @@
 
 
     <!-- Tabăra Liber -->
-    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-      <div class="relative h-40 w-full md:w-1/3 rounded-lg overflow-hidden border border-black">
+    <div class="flex flex-col  md:flex-row space-y-4  md:space-y-0 md:space-x-4">
+      <div class="relative h-40 w-full md:w-1/3  rounded-lg overflow-hidden border border-black">
         <img src="images/IMG_2638.jpg" alt="Tabăra Liber" class="object-cover w-full h-full">
       </div>
-      <div class="bg-white p-6 rounded-lg text-black flex flex-col justify-center w-full md:w-2/3">
+      <div class="bg-black p-6 rounded-lg bg-opacity-50 text-white flex flex-col justify-center w-full md:w-2/3">
         <h3 class="font-semibold text-lg">Tabăra Liber</h3>
         <p class="text-sm mt-2">Aceasta este o oportunitate pentru tineri de a se reconecta și a se întări spiritual. Tabăra îi ajută pe tineri să descopere chemarea lui Dumnezeu pentru viața lor.</p>
       </div>
     </div>
 
     <!-- Curs Parenting în Lumină Scripturii -->
-    <div class="bg-white p-6 rounded-lg text-black">
+    <div class="bg-black p-6 rounded-lg bg-opacity-50 text-white ">
       <h3 class="font-semibold text-lg">Curs: Parenting în Lumina Scripturii</h3>
       <p class="text-sm mt-2">Acest curs este dedicat părinților care doresc să își crească copiii în conformitate cu valorile Scripturii și să îi pregătească pentru viața de zi cu zi.</p>
     </div>
 
     <!-- Seri de rugăciune -->
-    <div class="flex flex-col md:flex-row-reverse gap-4 space-y-4 md:space-y-0 md:space-x-4">
+    <div class="flex flex-col  md:flex-row-reverse gap-4 space-y-4 md:space-y-0 md:space-x-4">
       <div class="relative h-40 w-full md:w-1/3 rounded-lg overflow-hidden border border-black">
         <img src="images/12.jpg" alt="Seri de rugăciune" class="object-cover w-full h-full">
       </div>
-      <div class="bg-white p-6 rounded-lg text-black flex flex-col justify-center w-full md:w-2/3">
+      <div class="bg-black p-6 rounded-lg bg-opacity-50 text-white flex flex-col justify-center w-full md:w-2/3">
         <h3 class="font-semibold text-lg">Seri de rugăciune</h3>
         <p class="text-sm mt-2">Aceste întâlniri sunt dedicate edificării relației noastre cu Dumnezeu prin rugăciune și închinare. Vino să experimentezi prezența Lui într-o atmosferă caldă și primitoare.</p>
       </div>

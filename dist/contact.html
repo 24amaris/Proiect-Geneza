@@ -5,33 +5,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Contact</title>
-  <script type="module" crossorigin src="./assets/script-DWoM4fkZ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/script-C81U9vvc.css">
+  <title>Home</title>
+  <script type="module" crossorigin src="./assets/script-Be9LaoKw.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/script-BVYIWBn_.css">
 </head>
 
-<body class="bg-black flex flex-col items-center">
+<body class="bg-cover bg-center flex flex-col items-center" style="background-image: url('./assets/IMG_3001-BN_UOmMq.jpg');">
   <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
   <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
     <img src="./assets/img1-Bu9y0yp8.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
-    <i class="bi bi-three-dots text-white text-3xl block md:hidden"></i>
+    <div class="relative">
+      <!-- Hidden Checkbox for toggle functionality -->
+      <input type="checkbox" id="menuToggle" class="peer hidden" />
+    
+      <!-- Button to toggle drawer -->
+      <label
+        for="menuToggle"
+        class="flex items-center justify-center w-10 h-10 text-white rounded-full cursor-pointer hover:bg-gray-900 md:hidden"
+        aria-label="Menu">
+        <i class="bi bi-three-dots text-4xl"></i>
+      </label>
+    
+      <!-- Drawer -->
+      <div class="fixed top-0 right-0 z-50 h-full w-64 bg-black text-white transform translate-x-full transition-transform  peer-checked:translate-x-0" >
+        <!-- Close Button -->
+        <label
+          for="menuToggle"
+          class="absolute top-4 right-4 text-white  cursor-pointer"
+          aria-label="Close drawer" >
+          <i class="bi bi-x-lg text-2xl"></i>
+        </label>
+    
+        <!-- Drawer Content -->
+        <div class="flex flex-col h-full p-4">
+          <!-- Navigation -->
+          <nav class="mb-4">
+            <a
+              href="index.html"
+              class="block w-full px-4 py-2 mb-2 text-left text-lg rounded-md mt-16 hover:bg-gray-600" >
+              Home
+            </a>
+
+            <a
+              href="evenimente.html"
+              class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+              Evenimente
+           </a>
+
+           <a
+           href="comunitate.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Comunitate
+        </a>
+
+        <a
+        href="predici.html"
+        class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+        Predici/live
+     </a>
+
+     <a
+     href="despreNoi.html"
+     class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+     Despre noi
+  </a>
+
+        <a
+           href="doneaza.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Doneaza
+        </a>
+        <a
+           href="contact.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Contact
+        </a>
+        <a
+           href="departamente.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Departamente
+        </a>
+        <a
+           href="verset.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Versetul zilei
+        </a>
+        <a
+           href="rugaciune.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Rugaciune
+        </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <!-- Meniul - vizibil doar pe desktop -->
+  <div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
+    <a href="index.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Home</a>
+    <a href="evenimente.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
+    <a href="comunitate.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
+    <a href="predici.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
+    <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
+    <a href="doneaza.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Donează</a>
+    <a href="contact.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Contact</a>
+    <a href="departamente.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
+    <a href="verset.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
+    <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
   </div>
 
-<!-- Meniul - vizibil doar pe desktop -->
-<div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
-  <a href="index.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
-  <a href="evenimente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
-  <a href="comunitate.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
-  <a href="predici.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
-  <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
-  <a href="doneaza.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
-  <a href="contact.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
-  <a href="departamente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
-  <a href="verset.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
-  <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
-</div>
 
-  <body class="bg-gray-100 flex flex-col items-center py-6">
+  <div class="flex flex-col  bg-black bg-opacity-70 w-full max-w-screen-lg mt-14  px-4">
     <!-- Contact Section -->
     <div class="bg-black-200 w-full max-w-screen-lg rounded-lg p-6 shadow-md">
       <h1 class="text-2xl font-bold text-yellow-500 mb-4">Contact</h1>
@@ -59,22 +145,35 @@
       <!-- Transport Options -->
 <div class="flex justify-center mt-6 space-x-4">
   <!-- Cu mașina -->
-  <a href="https://maps.app.goo.gl/SqF4moKU6guJWqnz8" target="_blank" class="bg-yellow-500 p-4 w-64 h-24 rounded-lg shadow-md text-center flex flex-col items-center justify-center hover:bg-yellow-600 transition">
-    <i class="bi bi-car-front text-3xl text-black mb-2"></i>
-    <p class="text-black text-sm">Cu mașina</p>
+  <a 
+  href="https://maps.app.goo.gl/SqF4moKU6guJWqnz8" 
+  target="_blank" 
+  class="bg-black border border-yellow-500 p-4 w-32 hover:w-52 h-24 rounded-lg shadow-md text-center flex flex-col items-center justify-center transition-all"
+  style="transition-duration: 1s;" 
+  >    <i class="bi bi-car-front text-3xl text-white mb-2"></i>
+    <p class="text-white text-sm">Cu mașina</p>
   </a>
   
   <!-- Cu tramvai -->
-  <a href="https://maps.app.goo.gl/SqF4moKU6guJWqnz8" target="_blank" class="bg-yellow-500 p-4 w-64 h-24 rounded-lg shadow-md text-center flex flex-col items-center justify-center hover:bg-yellow-600 transition">
-    <i class="bi bi-train-front-fill text-3xl text-black mb-2"></i>
-    <p class="text-black text-sm">Cu tramvai</p>
+  <a 
+  href="https://maps.app.goo.gl/SqF4moKU6guJWqnz8" 
+  target="_blank" 
+  class="bg-black border border-yellow-500 p-4 w-32 hover:w-52 h-24 rounded-lg shadow-md text-center flex flex-col items-center justify-center transition-all"
+  style="transition-duration: 1s;" 
+  >    <i class="bi bi-train-front-fill text-3xl text-white mb-2"></i>
+    <p class="text-white text-sm">Cu tramvai</p>
   </a>
   
   <!-- Pe jos -->
-  <a href="https://maps.app.goo.gl/SqF4moKU6guJWqnz8" target="_blank" class="bg-yellow-500 p-4 w-64 h-24 rounded-lg shadow-md text-center flex flex-col items-center justify-center hover:bg-yellow-600 transition">
-    <i class="bi bi-person-walking text-3xl text-black mb-2"></i>
-    <p class="text-black text-sm">Pe jos</p>
-  </a>
+  <a 
+  href="https://maps.app.goo.gl/SqF4moKU6guJWqnz8" 
+  target="_blank" 
+  class="bg-black border border-yellow-500 p-4 w-32 hover:w-52 h-24 rounded-lg shadow-md text-center flex flex-col items-center justify-center transition-all"
+  style="transition-duration: 1s;" 
+  >
+  <i class="bi bi-person-walking text-3xl text-white mb-2"></i>
+  <p class="text-white text-sm">Pe jos</p>
+</a>
 </div>
 
   
@@ -83,16 +182,16 @@
         <h2 class="text-lg font-bold text-white mb-2">Follow us on social media:</h2>
         <div class="flex justify-center space-x-4">
           <!-- Instagram -->
-          <a href="https://www.instagram.com/geneza.oradea" class="bg-yellow-500 text-black py-2 px-4 rounded-lg shadow-md text-sm hover:bg-yellow-600">
-            <i class="bi bi-instagram text-3xl text-black mb-2"></i>
+          <a href="https://www.instagram.com/geneza.oradea" class="bg-black py-2 px-4 rounded-lg border border-yellow-500 shadow-md text-sm hover:bg-gray-900">
+            <i class="bi bi-instagram text-3xl text-yellow-500 mb-2"></i>
           </a>
           <!-- Facebook -->
-          <a href="https://www.facebook.com/GenezaOradea" class="bg-yellow-500 text-black py-2 px-4 rounded-lg shadow-md text-sm hover:bg-yellow-600">
-            <i class="bi bi-facebook text-3xl text-black mb-2"></i>
+          <a href="https://www.facebook.com/GenezaOradea" class="bg-black  py-2 px-4 border border-yellow-500 rounded-lg shadow-md text-sm hover:bg-gray-900">
+            <i class="bi bi-facebook text-3xl text-yellow-500 mb-2"></i>
           </a>
           <!-- YouTube -->
-          <a href="https://www.youtube.com/@GenezaOradea" class="bg-yellow-500 text-black py-2 px-4 rounded-lg shadow-md text-sm hover:bg-yellow-600">
-            <i class="bi bi-youtube text-3xl text-black mb-2"></i>
+          <a href="https://www.youtube.com/@GenezaOradea" class="bg-black  py-2 px-4 rounded-lg border border-yellow-500 shadow-md text-sm hover:bg-gray-900">
+            <i class="bi bi-youtube text-3xl text-yellow-500 mb-2"></i>
           </a>
         </div>
       </div>

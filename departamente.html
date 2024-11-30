@@ -5,70 +5,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Departamente</title>
-  <style>
-  
-  .shadow-pop-tr {
-	-webkit-animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-@-webkit-keyframes shadow-pop-tr {
-  0% {
-    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-    -webkit-transform: translateX(-8px) translateY(8px);
-            transform: translateX(-8px) translateY(8px);
-  }
-}
-@keyframes shadow-pop-tr {
-  0% {
-    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-    -webkit-transform: translateX(-8px) translateY(8px);
-            transform: translateX(-8px) translateY(8px);
-  }
-}
-
-  </style>
-
+  <title>Home</title>
 </head>
-<body class="bg-black flex flex-col items-center">
-  <script type="module" src="./script.js"></script>
 
+<body class="bg-cover bg-center flex flex-col items-center" style="background-image: url('images/IMG_3001.jpg');">
+  <script type="module" src="./script.js"></script>
   <!-- Logo și iconul cu trei puncte pentru mobil și tabletă -->
   <div class="flex items-center justify-between w-full max-w-screen-lg p-4">
     <img src="images/img1.png" alt="Logo" class="w-32 md:w-20 lg:w-32">
-    <i class="bi bi-three-dots text-white text-3xl block md:hidden"></i>
-  </div>
+    <div class="relative">
+      <!-- Hidden Checkbox for toggle functionality -->
+      <input type="checkbox" id="menuToggle" class="peer hidden" />
+    
+      <!-- Button to toggle drawer -->
+      <label
+        for="menuToggle"
+        class="flex items-center justify-center w-10 h-10 text-white rounded-full cursor-pointer hover:bg-gray-900 md:hidden"
+        aria-label="Menu">
+        <i class="bi bi-three-dots text-4xl"></i>
+      </label>
+    
+      <!-- Drawer -->
+      <div class="fixed top-0 right-0 z-50 h-full w-64 bg-black text-white transform translate-x-full transition-transform  peer-checked:translate-x-0" >
+        <!-- Close Button -->
+        <label
+          for="menuToggle"
+          class="absolute top-4 right-4 text-white  cursor-pointer"
+          aria-label="Close drawer" >
+          <i class="bi bi-x-lg text-2xl"></i>
+        </label>
+    
+        <!-- Drawer Content -->
+        <div class="flex flex-col h-full p-4">
+          <!-- Navigation -->
+          <nav class="mb-4">
+            <a
+              href="index.html"
+              class="block w-full px-4 py-2 mb-2 text-left text-lg rounded-md mt-16 hover:bg-gray-600" >
+              Home
+            </a>
 
+            <a
+              href="evenimente.html"
+              class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+              Evenimente
+           </a>
+
+           <a
+           href="comunitate.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Comunitate
+        </a>
+
+        <a
+        href="predici.html"
+        class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+        Predici/live
+     </a>
+
+     <a
+     href="despreNoi.html"
+     class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+     Despre noi
+  </a>
+
+        <a
+           href="doneaza.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Doneaza
+        </a>
+        <a
+           href="contact.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Contact
+        </a>
+        <a
+           href="departamente.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Departamente
+        </a>
+        <a
+           href="verset.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Versetul zilei
+        </a>
+        <a
+           href="rugaciune.html"
+           class="block w-full px-4 py-2 text-left text-lg rounded-md hover:bg-gray-600">
+           Rugaciune
+        </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
   <!-- Meniul - vizibil doar pe desktop -->
   <div class="hidden md:flex justify-center p-2 w-full max-w-screen-lg rounded-lg">
-    <a href="index.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Home</a>
-    <a href="evenimente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
-    <a href="comunitate.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
-    <a href="predici.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
-    <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
-    <a href="doneaza.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Donează</a>
-    <a href="contact.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Contact</a>
-    <a href="departamente.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
-    <a href="verset.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
-    <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-white border border-black rounded-md font-semibold text-black text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
+    <a href="index.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Home</a>
+    <a href="evenimente.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Evenimente</a>
+    <a href="comunitate.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Comunitate</a>
+    <a href="predici.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Predici/live</a>
+    <a href="despreNoi.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Despre noi</a>
+    <a href="doneaza.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Donează</a>
+    <a href="contact.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Contact</a>
+    <a href="departamente.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Departamente</a>
+    <a href="verset.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Versetul zilei</a>
+    <a href="rugaciune.html" class="px-2 py-1 mx-1 bg-black border border-white rounded-md font-semibold text-white text-xs hover:bg-gray-500 hover:text-white">Rugăciune</a>
   </div>
 
+
   <!-- Carusel de imagini -->
-  <div class="container carousel-container mt-4 px-4 sm:px-6">
+  <div class="container  bg-black  bg-opacity-50 carousel-container mt-4 px-4 sm:px-6">
     <div id="carousel" class="flex space-x-4 overflow-x-auto sm:overflow-x-scroll flex-nowrap">
       <img src="images/IMG_2659.jpg" alt="Event Image 1" class="carousel-item w-64 h-64 object-cover rounded-lg ">
       <img src="images/IMG_2668.jpg" alt="Event Image 2" class="carousel-item w-64 h-64 object-cover rounded-lg">
@@ -83,19 +132,19 @@
   </div>
 
   <!-- Secțiune Departament Social -->
-  <div class="container bg-gray-100 rounded-lg p-6 text-center mt-8 shadow-lg px-4 sm:px-6">
-    <p class="text-lg text-gray-800 font-medium">
+  <div class="container bg-black  mb-36 w-5/6 bg-opacity-70 rounded-lg p-6 text-center mt-8 shadow-lg px-4 sm:px-6">
+    <p class="text-lg text-white font-medium">
       Departamentul social îngrijește și urmărește îndeaproape 7 familii aflate în situații foarte grele, care nu își pot permite să acopere minimul nevoilor de bază.
     </p>
-    <p class="text-lg text-gray-800 mt-4">
+    <p class="text-lg text-white mt-4">
       Cu ajutorul lui Dumnezeu, reușim lunar să asigurăm acestor familii: alimente, produse de igienă, medicamente, acces la clinicile potrivite pentru nevoile lor, lemne, sau chiar ajutor fizic pentru diverse reparații sau renovări.
     </p>
-    <p class="text-lg text-gray-800 mt-4">
+    <p class="text-lg text-white mt-4">
       Prin Dragostea în acțiune, Dumnezeu ne pune în mișcare ca să ducem Vestea Bună și să acționăm ajutând pe cei care trăiesc în medii defavorizate.
     </p>
     <!-- Buton -->
     <a href="doneaza.html">
-      <button class="mt-6 bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 font-semibold shadow-pop-tr">
+      <button class="mt-6 bg-black text-white border border-yellow-500 px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 font-semibold shadow-pop-tr">
         Vreau să mă implic și eu!
       </button>
     </a>
